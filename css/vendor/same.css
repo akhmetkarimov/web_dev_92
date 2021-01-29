@@ -1,0 +1,10 @@
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
