@@ -1,0 +1,41 @@
+.main-features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.feature-block {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-block img {
+    width: 75%;
+}
+
+
+.feature-btn {
+    background-color: #fff;
+    border: none;
+    color: #999;
+    font-weight: bold;
+    font-size: 20px;
+
+    padding: 7px 15px;
+    /* width: 140px;
+    height: 35px; */
+    cursor: pointer;
+    transition: .7s;
+}
+
+.feature-btn:hover {
+    background-color: #3157dc;
+    color: #fff;
+}
+
+.feature-btn.active {
+    background-color: #3157dc;
+    color: #fff;
+}
