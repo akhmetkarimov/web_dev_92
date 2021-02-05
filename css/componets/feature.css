@@ -9,6 +9,7 @@
     width: 45%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .feature-block img {
@@ -28,6 +29,7 @@
     height: 35px; */
     cursor: pointer;
     transition: .7s;
+    margin-right: 15px;
 }
 
 .feature-btn:hover {
@@ -38,4 +40,27 @@
 .feature-btn.active {
     background-color: #3157dc;
     color: #fff;
+}
+
+.feature-tab {
+    /* display: flex;
+    justify-content: space-between;
+    width: 75%; */
+}
+
+.feature-content {
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+.feature-content p {
+    margin-bottom: 25px;
+    color: #999;
+    font-size: 15px;
+    width: 82%;
+}
+
+.feature-content p > i {
+    margin-right: 10px;
+    color: #19ca94;
 }
