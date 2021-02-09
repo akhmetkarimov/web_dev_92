@@ -26,6 +26,17 @@
     left: 0;
 }
 
+.header.active {
+    background-color: #fff;;
+}
+
+.header.active .icons > a {
+    background-color: #3157dc;
+    color: #fff;
+}
+ 
+
+
 .logo img {
     width: 180px;
 }
