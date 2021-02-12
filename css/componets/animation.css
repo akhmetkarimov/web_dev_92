@@ -1,0 +1,65 @@
+.box {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: lightblue;
+
+
+    /* animation-name: change-box;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+
+    animation: circle-box 1.8s infinite alternate;
+}
+
+/* 
+@keyframes change-box {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        background-color: red;
+        transform: skew(20deg);
+    }
+
+    50% {
+        background-color: blue;
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: rotate(45deg);
+        border-radius: 50%;
+    }
+} */
+
+
+@keyframes circle-box {
+    from {
+        border-radius: 0;
+    }
+    25% {
+        transform: rotate(40deg);
+        border-radius: 50% 0 0 0;
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        transform: rotate(80deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        transform: rotate(120deg);
+    }
+    to {
+        border-radius: 50%;
+        transform: rotate(160deg);
+    } 
+}
