@@ -16,7 +16,8 @@
     animation-direction: alternate; */
 
 
-    animation: circle-box 1.8s infinite alternate;
+    /* animation: circle-box 1.8s infinite alternate; */
+    animation: to-top 1s infinite alternate;
 }
 
 /* 
@@ -42,7 +43,7 @@
 } */
 
 
-@keyframes circle-box {
+/* @keyframes circle-box {
     from {
         border-radius: 0;
     }
@@ -62,4 +63,73 @@
         border-radius: 50%;
         transform: rotate(160deg);
     } 
+} */
+
+
+@keyframes to-top {
+    to {
+        transform: translateY(-40%);
+        /* transform: rotate(180deg.); */
+    } 
+}
+
+.run-text {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    font-size: 24px;
+    transition: .7s;
+    transform: skew(0);
+    /* animation: run 6s infinite; */
+}
+
+@keyframes run {
+    from {
+        transform: translateX(-120%);
+    }
+    to {
+        transform: translateX(120%);
+    }
+}
+
+.run-text:hover {
+    transform: skew(-30deg) scale(1.2);
+
+    /* animation: test .8s;
+    animation-fill-mode: forwards; */
+}
+
+
+/* @keyframes test {
+    to {
+        transform: skew(-30deg) scale(1.2);
+    }
+} */
+
+
+section {
+    overflow: hidden;
+}
+.activeSection {
+    transform: translateX(-120%);
+    opacity: 0;
+    animation: show-section 1.1s forwards;
+}
+
+.activeSectionRight {
+    transform: translateX(120%);
+    opacity: 0;
+    animation: show-section 1.1s forwards;   
+}
+
+@keyframes show-section {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
