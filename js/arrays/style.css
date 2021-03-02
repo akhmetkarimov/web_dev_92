@@ -1,0 +1,41 @@
+.wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+.gallery-item {
+    width: 30%;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+.gallery-item > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.gallery-item:last-child {
+    margin-right: auto;
+    margin-left: 53px;
+}
+
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 47%;
+    }
+    .gallery-item:last-child {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .gallery-item {
+        width: 100%;
+    }
+}

@@ -234,3 +234,38 @@ document.write(`<h3>(Ternary Condition) Number is ${result}: ${evenOdd}</h3> <hr
 
 let quarters = x > 0 && y > 0 ? 'I' : x < 0 && y > 0 ? 'II' : x < 0 && y < 0 ? 'III' : x > 0 && y < 0 ? 'IV' : 'Error'
 document.write(`<h3>(Ternary Condition) Quarters of X: ${x} and Y: ${y} is ${quarters}</h3> <hr>`)
+
+
+// В високосном годе 366 дней, в обычном 365.
+// a. Если год не делится на 4, значит он обычный.
+// b. Иначе надо проверить не делится ли год на 100.
+// c. Если не делится, значит это не столетие и можно сделать вывод, что год
+// високосный.
+// d. Если делится на 100, значит это столетие и его следует проверить его делимость на 400.
+// e. Если год делится на 400, то он високосный.
+// f. Иначе год обычный.
+
+
+
+let year = Math.floor(Math.random() * 2500)
+document.write(`<h2>Year: ${year}</h2>`)
+
+
+// if (year % 4 != 0) {
+//     document.write(`<h2>Day: 365</h2>`)
+// } else {
+//     if (year % 100 == 0 && year % 400 != 0) {
+//         document.write(`<h2>Day: 365</h2>`)
+//     } else {
+//         document.write(`<h2>Day: 366</h2>`)
+//     }
+// }
+
+let normalYear = year % 4 != 0 ||  year % 100 == 0 &&  year % 400 != 0
+document.write(normalYear)
+
+if (normalYear) {
+    document.write(`<h2>Day: 365</h2>`)
+} else {
+    document.write(`<h2>Day: 366</h2>`)
+}
