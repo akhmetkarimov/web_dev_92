@@ -212,11 +212,6 @@ for (let index in departments) {
     document.write(`<p>${departments[index]} ${index}</p>`)
 }
 
-
-
-
-
-
 // for (let key in person) {
 //     document.write(`<p>${key}: ${person[key]}</p>`)
 // }
